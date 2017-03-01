@@ -1,0 +1,858 @@
+<!--DOCTYPE html-->
+<html lang="en">  <!--This is html5-->
+<head>
+	<title>Interior Designing</title>
+	 
+	 <meta charset="utf-8">
+	 <meta http-equiv="refresh" content="30">
+	 <meta name="author" content="Vipul Lalwani">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+	
+	<!--for inserting icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--for inserting google icons-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	
+
+	
+  
+
+	
+	<style>
+		
+		<!--.container
+		{
+			margin:0 auto;
+			padding:0px;
+		}-->
+		
+		.header
+		{
+			font-size:15px;
+			font-weight:bold;
+			text-align:center;
+			padding:20px 0px 10px 10px ;
+		}
+		
+		#start
+		{
+			font-size:25px;
+		}
+		
+		hr
+		{
+			width:100vw;
+		}
+		.lax 
+		{
+			background-image: url("home.jpeg");
+			min-height: 1000px; 
+			/* Create the parallax scrolling effect*/ 
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			<!--font-size:30px;
+			font-weight:bold;
+			font-align:center;
+			border-bottom:1px solid;-->
+		}
+		
+		.name
+		{
+			font-size:48px;
+			font-weight:bold;
+			text-align:center;
+			color:black;
+			position:relative;
+			top:400px;
+			<!--border-bottom:1px solid ;-->
+		}
+		.quote
+		{
+			font-size:30px;
+			text-align:center;
+			color:black;
+			position:relative;
+			top:400px;
+		}
+		.bl
+		{
+			border:2px solid ;
+			width:300px;
+			position:relative;
+			top:400px;
+		}
+		
+		.about h2, .wedo h2, .prod h2,.test h2, .title h2
+		{
+			    text-align: center;
+				font-size:28px;
+				font-weight: bold;
+				color:#0D47A1;
+				padding:10px;
+		}
+		
+		.separator-container .separator
+		{
+			color:black;
+			margin: 0 auto 1em;				<!-- 1em=20px-->
+			width: 20em;
+			text-align: center;
+		}
+		
+		
+		.about p
+		{
+			font-family: cursive;
+			text-align: center;
+			font-size:18px;
+			padding:10px 0px 20px 200px ;
+			
+		}
+		.card img
+		{
+			padding:20px;
+			width:380px;
+		}
+		
+		.wecon, .prod, .prodi, .respect
+		{
+			padding:10px 20px 10px 20px;
+			text-align:center;
+		}
+		.wecon p, .prod p, .prodi p,.test p, .think, .respect p, .tem p, .title p
+		{
+			font-family: cursive;
+			font-size:15px;
+		}
+		.wecon h3, .prod h3 ,.prodi h3, .test h3, .tem h3, .card h3,.title h3
+		{
+			font-size:22px;
+			color:#1A237E;
+		}
+		.prodi img
+		{
+			width:340px;
+			height:300px;
+			padding:20px;
+		}
+		
+		.prodi img:hover 
+		{
+			box-shadow: 0 0 2px 2px rgba(0,0,0,1);  
+			border: 2px solid black;  
+		}
+		
+		<!--.prodi button 
+		{
+			border-radius: 40%;
+		}	-->
+		
+		h4
+		{
+			text-align:center;
+		}
+		
+		.one,.two,.three,.four
+		{
+			padding:20px;
+		}
+		.test-name
+		{
+			font-size:18px;
+		}
+		.test
+		{
+			text-align:center;
+		}
+		.tn
+		{
+			padding:15px;
+			text-align:center;
+		}
+		.tn p
+		{
+			font-size:20px;
+			line-spacing:2px;
+		}
+		.tn h4
+		{
+			font-size:18px;
+		}
+		.clearfix
+		{
+			height:70px;
+		}
+		.Meet-Our-Team
+		{
+			text-align:center;
+		}
+		.tem img	
+		{
+			border-radius:50%;
+			height:100px;
+			width:100px;
+		}
+		.tem,.title
+		{
+			padding:30px 0px 30px 0px;
+		}
+		#vis i
+		{
+			visibility:hidden;
+		}
+		#vis:hover i
+		{
+			visibility:visible;
+		}
+		.respect 
+		{
+			padding: 0 0 100px 0;
+		}
+		#address 
+		{ 
+			position: relative; 
+		}
+		#contact 
+		{
+			position:absolute;
+			top:70px;
+			width:20%;
+			float:left;
+			z-index: 5;
+			background-color: #ffffff;
+			border: 2px solid black;
+			opacity: 0.9;
+			filter: alpha(opacity=80); <!-- For IE8 and earlier */-->
+			text-align: center;
+			left: 30px;
+		}
+		
+				
+		#contact h4
+		{
+			margin: 20px;
+			text-align:center;
+		}
+		#contact h5
+		{
+			margin: 20px;
+			text-align:center;
+		}
+		#contact button
+		{
+			margin: 12px;
+			text-align:center;
+		}
+		#contact #vis
+		{
+			margin-left: 28%;
+		}
+		
+		
+		.bs  
+		{
+			float: left;
+			width: 100%;
+			list-style-type: none;
+		}
+		.bs a 
+		{
+			float: left;
+			color: white;
+			padding: 0.2em 0.6em;
+		}
+
+		.bs a:hover
+		{
+			color:grey;
+		}
+		.bs li
+		{
+			display:inline;
+		}
+		
+		.social-area
+		{
+			float:right;
+		}
+		.social-area a
+		{
+			padding:4px;
+		}
+		.footer a
+		{
+			font-size:16px;
+		}
+		.w3-container
+		{
+			height:80px;
+		}
+		.foot
+		{
+			padding: 20px 0 0 0;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" role="navigation">
+		<div class="container-fluid">
+				<div class="row header">
+					<div class="col-md-2 col-xs-12">
+						<div id="start"><a href="index.html" style="color:black">Dkor interior</a></div>
+					</div>
+							
+					<div class="col-md-10 col-xs-12">
+						<div class="col-md-1 col-xs-12"><a href="#about" style="color:black">About Us</a></div>
+						<div class="col-md-2 col-xs-12"><a href="#wedo" style="color:black">What We Do</a></div>
+						<div class="col-md-1 col-xs-12"><a href="#test" style="color:black">Testimonials</a></div>
+						<div class="col-md-2 col-xs-12"><a href="#products" style="color:black">Our Products</a></div>
+						<div class="col-md-1 col-xs-12"><a href="#team" style="color:black">Our Team</a></div>
+						<div class="col-md-1 col-xs-12"><a href="#numbers" style="color:black">Respect++</a></div>
+						<div class="col-md-2 col-xs-12"><a href="#contact" style="color:black">Contact Us</a></div>
+						<div class="col-md-2 col-xs-12">
+							<a href="https://www.facebook.com/DkorInteriorsSydney/">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://twitter.com/dkorinteriors" style="color:light-blue">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://plus.google.com/106358629537128920536" style="color:red">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+						</div>
+					</div>
+				</div>
+		</div>
+	</nav>
+	<hr>
+		<div class="row lax">
+			<div class="row name">INTERIOR DESIGN</div>
+			<div class="col-md-4 col-md-offset-5 bl"></div>
+			<div class="row quote">
+			<div class="col-md-4 col-md-offset-5">Concept . Collaborate . Create</div>
+			</div>
+			 
+		</div>
+		
+	<!--About Us started-->	
+	
+	<div class="About-Us" id="about">
+		<div class="container-fluid">
+			<div class="row title">
+				<div class="title">
+					<h2>About Us</h2>
+					<div class="separator-container">
+						<div class="separator line-separator">∎</div>
+					</div>
+				</div>
+			<div class="row about">
+				<div class="col-md-9 col-md-offset-1">
+					<p>Our aim is to provide Innovative and Human-Centered Residential Interior Design Services
+					</p>
+				</div>	
+		</div>
+		
+		<div class="row about-img">
+			<div class="col-md-3 col-md-offset-1">
+                <div class="card ">
+					<img  src="bed.jpeg" />
+				</div>
+                <div class="card">
+                    <img src="kitchen.jpeg" />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="shelf.jpeg"/>
+                </div>
+                <div class="card">
+                    <img src="door.jpeg"/>
+                </div>
+                <div class="card">
+                     <img src="gallery.jpeg"/>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="kit.jpeg"/>
+                </div>
+                <div class="card">
+					<img src="drawing.jpeg"/>
+                </div>
+            </div>
+		</div>	
+	</div>			
+	<!--About Us ended-->
+	
+	<!--What We Do started-->
+	<div class="What-we-do" id="wedo">
+        <div class="container-fluid">
+            <div class="row title">
+                <div class="title">
+                    <h2>What we do</h2>
+                        <div class="separator-container">
+							<div class="separator line-separator">∎</div>
+                        </div>
+		        </div>
+            </div>
+            <div class="row wecon">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="card">
+                        <div class="icon">
+							<i class="material-icons"style="font-size:100px;color:#D50000;text-shadow:2px 2px 4px">laptop_mac</i>
+                        </div>
+                        <h3>Create Concepts</h3>
+                        <p>The first part of the interior design process at Dkor always starts with a concept. It is here that we create an agreed upon flow to your space.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+					<div class="card">
+                        <div class="icon">
+                            <i class="material-icons"style="font-size:100px;color:#D50000;text-shadow:2px 2px 4px">weekend</i>
+                        </div>
+                        <h3>Design Development</h3>
+                        <p>After a concept is established, your project’s team develops the scope of your space further by developing the home’s design features and selecting material finishes, plumbing fixtures, lighting, furniture and accessories. This is also the phase where we work closely with an architect to develop your construction Documents, including all RCP, Plumbing and Electrical plans. </p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--What We Do ended-->
+	
+	<!--Our Products started-->
+		<div class="Our-Products" id="products">
+                <div class="container-fluid">
+                    <div class="row prod">
+                        <div class="title">
+                            <h2>Our Products</h2>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                            <div class="col-md-10 col-md-offset-1">
+								<p><h3>Check out the most popular products from our platform, they will speed up your development process for sure! We would love to hear your feedback.<h3><br><br></p>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="container prodi">
+                    <div class="row one">
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project">
+                                <a target="_blank" class="img-class" href="https://www.amazon.com/Pendant-Lights-White-Ceiling/s?ie=UTF8&page=1&rh=n%3A3736681%2Cp_n_material_two_browse-bin%3A5740666011">
+                                    <img src="lamp.jpeg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h4 class="text-gray">Well designed,Starting from $200</h4>
+                                        <h3>White Pendent Lamp</h3>
+                                        <p>Our pendant lamp and shades allow light to shine through in different ways. Our MASKROS lamp has a shade that makes decorative patterns on the walls and ceiling.</p>
+                                        <a target="_blank" href=""http://www.ikea.com/us/en/catalog/categories/departments/living_room/18751/""><button class="w3-btn w3-hover-Red w3-round-xxlarge w3-ripple ">Know More</button></a>		<!--target="_blank"  Opens the linked document in a new window or tab-->
+                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project">
+                                <a target="_blank" class="img-class" href="https://in.pinterest.com/explore/glass-painting-designs/">
+                                   <img src="glass painting.jpeg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h4 class="text-gray">The Latest,Jesus Christ glass painting</h4>
+                                        <h3>Glass Paintings</h3>
+                                        <p>Painting is the art in which colours and lines make a visual impression. Painting can be fun, and apart from painting on the traditional canvas you could decorate glass, ceramic, pots and fabric with painted designs. Not only brushes but knives, spatula, nibs and even twigs could be used for painting designs.</p>
+                                        <a target="_blank" href="https://www.shutterstock.com/search/glass+painting"><button class="w3-btn w3-hover-Blue w3-round-xxlarge w3-ripple ">Know More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project">
+                                <a target="_blank" class="img-class" href="http://www.homedepot.com/b/Tools-Hardware-Tool-Storage-Portable-Tool-Boxes/Metal/N-5yc1vZc22aZ1z0vb5j">
+                                    <img src="metal.jpeg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h4 class="text-gray">2000+ Sold, Starting from $100</h4>
+                                        <h3>Black Metal Tools</h3>
+                                        <p>Metals used for architectural purposes include lead, for water pipes, roofing, and windows; tin, formed into tinplate; zinc, copper and aluminium, in a range of applications including roofing and decoration.</p>
+                                        <a target="_blank" href="https://en.wikipedia.org/wiki/Architectural_metals"><button class="w3-btn w3-hover-Deep-Purple w3-round-xxlarge w3-ripple ">Know More</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="row two">
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project">
+                                <a target="_blank" class="img-class" href="https://www.pexels.com/photo/white-pattern-design-48728/">
+                                    <img src="white.jpeg">
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h4 class="text-gray">Starting from $300</h4>
+                                        <h3>White Pattern Design</h3>
+                                        <p> Design could be as simple as black and white this year. In a home, the look is dramatic, daring, and timeless. Interior designer Dorothy Draper was known for her use of black and white as far back as the 1930s.</p>
+                                        <a target="_blank" href="https://www.pinterest.com/explore/black-white-pattern/"><button class="w3-btn w3-hover-Green w3-round-xxlarge w3-ripple ">Know more</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project">
+                                <a target="_blank" class="img-class" href="https://www.amazon.com/Empty-Museum-Western-Cultures-Artistic/dp/0754649547">
+                                    <img src="pexels-photo-196030.jpeg">
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h4 class="text-gray">8,500+ Registrations, Starting from $50000</h4>
+                                        <h3>Empty Mueseum</h3>
+                                        <p>The Empty Museum is a Virtual Reality concept designed to be used for museums and interpretation centres.  It can be described as a virtual reality room, empty of real objects but full of interactive contents floating in the virtual space that surrounds the user. </p>
+                                         <a target="_blank" href="http://empty.museumflorence.com/empty-museum-movement/"><button class="w3-btn w3-hover-Indigo w3-round-xxlarge w3-ripple ">Register</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project">
+                                <a target="_blank" class="img-class" href="https://www.pexels.com/photo/white-ceramic-rectangular-sink-under-white-wooden-frame-rectangular-mirror-157231/">
+                                    <img src="pexels-photo-157231.jpeg">
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h4 class="text-gray">6,200+ Registrations, Starting from $6000</h4>
+                                        <h3>White Ceramic Rectangular Sink Under White Wooden Frame Rectangular Mirror</h3>
+                                        <p>We remodeled our master bathroom, and ordered 2 of the Ronbow sinks - love them! We purchased a cabinet without a countertop on line, and were able to choose a granite top and had it custom cut for the rectangle Ronbow sinks. They look great! </p>
+                                        <a target="_blank" href="https://www.wayfair.com/Ronbow-Rectangular-Ceramic-Undermount-Bathroom-Sink-in-White-RNB3678.html"><button class="w3-btn w3-hover-Orange w3-round-xxlarge w3-ripple ">Register</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+					
+
+                        
+
+                        
+                    <br>
+                    
+
+                    <div class="row four">
+                        <div class="col-md-4 col-md-offset-4">
+
+                            <div class="project">
+                                <a target="_blank" class="img-class" href="https://www.pexels.com/photo/water-architecture-colourful-church-52062/">
+                                    <img src="pexels-photo-52062.jpeg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h4 class="text-gray">, Starting from $4000</h4>
+                                        <h3>Tunnel Paintaing</h3>
+                                        <p>Paintings for which no application for authorization has been made will be painted over by Physical Plant without notice.</p>
+                                         <a target="_blank" href="dfw.cbslocal.com/2017/01/27/anonymous-artist-painting-animals-on-keller-tunnel/"><button class="w3-btn w3-hover-Yellow w3-round-xxlarge w3-ripple ">Know More</button></a></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+	<div class="embed-responsive embed-responsive-12by10">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=XAIJjQQpg5o"></iframe>
+    </div>        
+<!--Our Products is only till this-->
+	
+<!--testimonials started-->
+	<div class="testimonials" id="test">
+                <div class="container test">
+                    <div class="title">
+                        <h2>What people think...</h2>
+                        <div class="separator-container">
+                            <div class="separator line-separator">∎</div>
+                        </div>
+                    </div>
+                    <div class="tab-content tn">
+                        <div class="tab-pane fade in active" id="ms">  <!-- if you will write only fade then initially no active tab would be shown so put fade in-->
+                            <p class="think">Hey Dkor Interiors team. Absolutely love your work! It's like wonderfull that you guys are doing all the 3 work together viz. concept, collaborate and create design! Keep up the awesome work!</p>
+                        </div>
+
+                       
+
+                        <div class="tab-pane fade" id="bbctech">
+                            <p class="think">Finding a website with a vast purpose is always inspiring to continue concept development. But you did Magic my friends. Keep going and be sure if there is a donation, I'm in. Thanks for your daily hardworking. Hope to meet u guys one day.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="intel">
+                            <p class="think">Hi, your site and all the stuff on it looks simply awesome. Love this masterpiece of work ;)</p>
+                        </div>
+                    </div>
+                    <div class="row">
+						<div class="col-md-8 col-md-offset-3">
+							<ul class="nav nav-pills tn">
+								<li class="active" >
+									<a href="../#ms" data-toggle="pill" style="color:black">
+										<h4 class="test-name"><strong>IVONNE RONDEROS</strong></h4>
+									</a>
+								</li>
+							
+							
+								
+							
+							
+								<li>
+									<a href="../#bbctech" data-toggle="pill" style="color:black">
+										<h4 class="test-name"><strong>KELLY WEARSTLER</strong></h4>
+									</a>
+								</li>
+							
+								<li>
+									<a href="../#intel" data-toggle="pill" style="color:black">
+										<h4 class="test-name"><strong>Marianna Fierro</strong></h4>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+			</div> 
+<!--testimonials ended-->
+
+<!--our team started-->
+		<div class="Meet-Our-Team" id="team">
+                <div class="container">
+                    <div class="row title">
+                        <h2>Meet our Team</h2>
+                        <div class="separator-container">
+							<div class="separator line-separator">∎</div>
+                        </div>
+                    </div>
+					<div class="row tem">
+                        <div class="col-md-4">
+                            <img src="Ivonne_ronderos.jpg"/>
+                            <h3>Ivonne Ronderos </h3>
+                            <br>
+                            <p>Ivonne Ronderos is the founder of Dkor Interiors and a very confident and self motivated team player and a well known architecture</p>
+                            <div class="social hidden-xs">
+								<a target="_blank" href="https://www.facebook.com/dkorinteriors/"><i class="fa fa-facebook-square"></i></a>
+                                <a target="_blank" href="https://twitter.com/dkorinteriors" style="color:light-blue"><i class="fa fa-twitter"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/dkorinteriors/" style="color: #fb3958"><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+                        <div class="col-md-4">
+                            <img src="download.jpg"/>
+                            <h3>KISHIA DE LA ESPRIELLA</h3>
+                            <br>
+                            <p>Kishia De La Espriella is the project manager of Dkor Interiors and is the person behind our concept development and creating design,and also behind our success.</p>
+                            <div class="social hidden-xs">
+                                <a target="_blank" href="https://www.facebook.com/public/Lia-De-La-Espriella"><i class="fa fa-facebook-square"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/isadelae/" style="color: #fb3958"><i class="fa fa-instagram"></i></a>
+								<a target="_blank" href="https://twitter.com/delaespriellae?lang=en" style="color:light-blue"><i class="fa fa-twitter"></i></a>
+							</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="download (1).jpg"/>
+                            <h3>MARCEL WANDERS</h3>
+                            <br>
+                            <p>Marcel Wanders is a Dutch designer that got the world’s attention in 1996 with his iconic Knotted Chair.Marcel has made his mission to “create an environment of love, live with passion and make our most exciting dreams come true.” </p>
+                            <div class="social hidden-xs">
+                                <a target="_blank" href="https://www.facebook.com/wanderswonders/"><i class="fa fa-facebook-square"></i></a>
+                                <a target="_blank" href="https://twitter.com/wanderswonders?lang=en"><i class="fa fa-twitter"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/marcelwanders/?hl=en" style="color: #fb3958"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+<!--our team ended-->		
+			
+<!--Respect++ started-->		
+			<div class="Respect++" id="numbers">
+                <div class="container">
+                    <div class="row respect">
+                        <div class="title">
+                            <h2>Numbers don't lie - Respect++</h2>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                            <p><h3><q>Our ability to truly listen and understand our clients needs and style is what fuels our creative process which evolves into the innovative designs that we have become known for.</q> - Ivonne</h3></p>
+                        </div>
+						<div class="clearfix"></div>
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<div class="card">
+									<h3>Users</h3>
+									<h5>Businesses and Professionals</h5>
+									<div class="number">
+										125,000+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="card">
+									<h3>Workshops</h3>
+									<h5>Designing</h5>
+									<div class="number" >
+										200,000+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="card">
+									<h3>Countries</h3>
+									<h5>Where we made sponsorships</h5>
+									<div class="number" >
+										87
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+<!--Respect++ never ends-->	
+
+
+					
+<!--address started-->
+	
+	 
+        <div class="container-fluid" id="address"><div id="map" style="width:100%;height:700px;"></div>
+            <div class="row" id="contact">
+				
+				<h4 class="one">Where to meet ?</h4>
+				<h5 class="on">N-81, Barakhamba Road, Block N, <br>Cannaught Place,New Delhi,<br>Delhi 110001</h5>
+                <h4 class="two">Want to say hello?</h4>
+                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdABZYBT672BQYQfjKWwVBvYq_R_1qCGUXebiT-VCfJaxs-0g/viewform">
+					<button class="w3-btn w3-hover-red w3-ripple " id="vis">CONTACT US <i class="fa fa-paper-plane"></i></button>
+                </a>
+                <h4 class="three">Thank you for 100k shares!</h4>
+                <button id="fb" class="btn btn-lg" st>
+                    <i class="fa fa-facebook-square"></i> Facebook
+                </button>
+                <button id="twit" class="btn btn-lg">
+                    <i class="fa fa-twitter"></i> Twitter
+                </button>
+            </div>
+        </div>
+	</div>
+				
+
+<!--address ended-->
+
+<!--footer started-->
+    <div class="w3-container w3-black">
+		<footer class="footer">
+			<div class="row foot">
+				<div class="col-md-4 col-md-offset-1">
+					<ul class="bs">
+						<li>
+							<a href="#index.html">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Contact
+							</a>
+						</li>
+						<li>
+							<a href="#http://blog.creative-tim.com/">
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#http://www.creative-tim.com/sponsorships">
+								Sponsorships
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<div class="copyright">
+						&copy; 2017 <a target="_blank" href="index.html" style="color:white">Dkor Interiors</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="social-area">
+						<a href="https://www.facebook.com/DkorInteriorsSydney/" style="color:white">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+						<a href="https://twitter.com/dkorinteriors" style="color:white">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="https://plus.google.com/106358629537128920536" style="color:white">
+							<i class="fa fa-google-plus-square"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+<!--footer started-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+function myMap() {
+	var mapOptions = {
+		center: new google.maps.LatLng(28.6311389, 77.2220528),
+		zoom: 16,
+		mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	var marker = new google.maps.Marker(mapOptions);
+	var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(28.6311389, 77.2220528),
+        map: map,
+    });
+}
+/*function initMap() {
+        var myLatLng = {lat: 28.6311389, lng: 77.2220528};
+		var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: myLatLng
+        });
+		var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        });
+      }*/
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9j_zZCF2d4uivosUEchdJj7QrSYA_KeU&callback=myMap"></script>
+	
+	
+	
+</html>
